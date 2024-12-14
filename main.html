@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #48a7d4 0%, #234b5e 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="gradient-bg text-white p-4 fixed w-full z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Portfolio Guide</h1>
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="hover:text-gray-200">Home</a>
+                <a href="#steps" class="hover:text-gray-200">Steps</a>
+                <a href="#tips" class="hover:text-gray-200">Tips</a>
+                <a href="#resources" class="hover:text-gray-200">Resources</a>
+            </div>
+            <button class="md:hidden" onclick="toggleMenu()">
+                <i class="bi bi-list text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden">
+            <div class="flex flex-col items-center space-y-4 mt-4">
+                <a href="#home" class="hover:text-gray-200">Home</a>
+                <a href="#steps" class="hover:text-gray-200">Steps</a>
+                <a href="#tips" class="hover:text-gray-200">Tips</a>
+                <a href="#resources" class="hover:text-gray-200">Resources</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 pb-12 gradient-bg text-white">
+        <div class="container mx-auto px-4 py-16 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Create Your Perfect Portfolio</h1>
+            <p class="text-xl mb-8">Learn how to showcase your work professionally and effectively</p>
+            <a href="#steps" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Steps Section -->
+    <section id="steps" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Essential Steps</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card-hover bg-white p-6 rounded-lg shadow-lg">
+                    <div class="text-4xl text-blue-500 mb-4"><i class="bi bi-1-circle"></i></div>
+                    <h3 class="text-xl font-semibold mb-3">Plan Your Content</h3>
+                    <p class="text-gray-600">Gather your best work, organize projects, and create a compelling narrative about your journey.</p>
+                </div>
+                <div class="card-hover bg-white p-6 rounded-lg shadow-lg">
+                    <div class="text-4xl text-blue-500 mb-4"><i class="bi bi-2-circle"></i></div>
+                    <h3 class="text-xl font-semibold mb-3">Design Layout</h3>
+                    <p class="text-gray-600">Choose a clean, professional design that highlights your work and makes navigation intuitive.</p>
+                </div>
+                <div class="card-hover bg-white p-6 rounded-lg shadow-lg">
+                    <div class="text-4xl text-blue-500 mb-4"><i class="bi bi-3-circle"></i></div>
+                    <h3 class="text-xl font-semibold mb-3">Add Personal Touch</h3>
+                    <p class="text-gray-600">Include your unique story, skills, and professional goals to make your portfolio stand out.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section id="tips" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Pro Tips</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4">Do's</h3>
+                    <ul class="space-y-3">
+                        <li><i class="bi bi-check-circle text-green-500"></i> Keep it simple and clean</li>
+                        <li><i class="bi bi-check-circle text-green-500"></i> Showcase your best work</li>
+                        <li><i class="bi bi-check-circle text-green-500"></i> Update regularly</li>
+                        <li><i class="bi bi-check-circle text-green-500"></i> Include contact information</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4">Don'ts</h3>
+                    <ul class="space-y-3">
+                        <li><i class="bi bi-x-circle text-red-500"></i> Overload with information</li>
+                        <li><i class="bi bi-x-circle text-red-500"></i> Use low-quality images</li>
+                        <li><i class="bi bi-x-circle text-red-500"></i> Forget mobile responsiveness</li>
+                        <li><i class="bi bi-x-circle text-red-500"></i> Ignore SEO basics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Useful Resources</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <a href="#" class="resource-card bg-gray-50 p-6 rounded-lg text-center hover:bg-gray-100 transition">
+                    <i class="bi bi-brush text-4xl text-blue-500"></i>
+                    <h3 class="mt-4 font-semibold">Design Tools</h3>
+                </a>
+                <a href="#" class="resource-card bg-gray-50 p-6 rounded-lg text-center hover:bg-gray-100 transition">
+                    <i class="bi bi-code-slash text-4xl text-blue-500"></i>
+                    <h3 class="mt-4 font-semibold">Code Templates</h3>
+                </a>
+                <a href="#" class="resource-card bg-gray-50 p-6 rounded-lg text-center hover:bg-gray-100 transition">
+                    <i class="bi bi-camera text-4xl text-blue-500"></i>
+                    <h3 class="mt-4 font-semibold">Stock Photos</h3>
+                </a>
+                <a href="#" class="resource-card bg-gray-50 p-6 rounded-lg text-center hover:bg-gray-100 transition">
+                    <i class="bi bi-book text-4xl text-blue-500"></i>
+                    <h3 class="mt-4 font-semibold">Tutorials</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2023 Portfolio Guide. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="hover:text-gray-200"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="hover:text-gray-200"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="hover:text-gray-200"><i class="bi bi-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu if open
+                const menu = document.getElementById('mobileMenu');
+                if (!menu.classList.contains('hidden')) {
+                    menu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Add scroll animation for cards
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        document.querySelectorAll('.card-hover').forEach((card) => {
+            card.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-500');
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
